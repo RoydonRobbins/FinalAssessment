@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Login {
+public class TestLogin {
 
 	@Test
 	public void loginVerification() {
@@ -35,8 +35,7 @@ public class Login {
 
         By byOtpField = By.xpath("//div[@class='nb-otp__input-label']");
         WebElement otpFieldElement = driver.findElement(byOtpField);
-        System.out.println(otpFieldElement.getText() + " : " + otpStr);
-        // Assert.assertEquals(otpFieldElement.getText(), otpStr);
+        Assert.assertEquals(otpFieldElement.getText(), otpStr);
         
 	}
 

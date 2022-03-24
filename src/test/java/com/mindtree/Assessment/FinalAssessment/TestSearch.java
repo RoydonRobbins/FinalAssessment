@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Search {
+public class TestSearch {
 	@Test
 	public  void searchBarResults() {
 		String location = "Bangalore";
@@ -57,6 +57,5 @@ public class Search {
 		String breadcrumbStr = breadcrumb.get(lastElement).getText().trim().toLowerCase();
 			
 		Assert.assertEquals(selectedLocalityStr, breadcrumbStr);
-
 	}
 }

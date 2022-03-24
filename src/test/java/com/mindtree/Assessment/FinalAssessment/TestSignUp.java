@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
-public class SignUp {
+public class TestSignUp {
 
 	@Test
 	public void singupVerification()  {
@@ -51,7 +51,6 @@ public class SignUp {
         WebElement usernameCheck = driver.findElement(By.xpath("//span[@class='nb__3-MNF']"));
         String signupUsername = usernameCheck.getText();
         Assert.assertEquals(signupName, signupUsername);
-		
 	}
 	
 	
