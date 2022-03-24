@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-      	git 'https://github.com/RoydonRobbins/JenkinsLearning.git'
+      	git 'https://github.com/RoydonRobbins/FinalAssessment.git'
       }
     }
     stage('Build') {

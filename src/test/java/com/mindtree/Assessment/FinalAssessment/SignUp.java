@@ -51,10 +51,7 @@ public class SignUp {
         WebElement usernameCheck = driver.findElement(By.xpath("//span[@class='nb__3-MNF']"));
         String signupUsername = usernameCheck.getText();
         Assert.assertEquals(signupName, signupUsername);
-		/*
-		 * if(signupName.equalsIgnoreCase(signupUsername)) {
-		 * System.out.println("Passed"); }else { System.out.println("Failed"); }
-		 */
+		
 	}
 	
 	
