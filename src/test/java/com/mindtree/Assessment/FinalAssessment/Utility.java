@@ -43,7 +43,7 @@ public class Utility {
 	
 	static WebDriver getDriver() {
 		final String CHROME_DRIVER = "webdriver.chrome.driver";
-        final String CHROME_DRIVER_PATH = "D:\\Rakesh\\Downloads\\Compressed\\chromedriver_win32\\chromedriver.exe";
+        final String CHROME_DRIVER_PATH = "C:\\Program Files\\chromedriver_win32\\chromedriver.exe";
         System.setProperty(CHROME_DRIVER, CHROME_DRIVER_PATH);
         final String URL = "https://www.nobroker.in/";
         WebDriver driver = new ChromeDriver();
