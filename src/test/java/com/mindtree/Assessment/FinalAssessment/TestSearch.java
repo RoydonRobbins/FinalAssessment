@@ -36,6 +36,7 @@ public class TestSearch {
 		}
 
 		WebElement searchBar = driver.findElement(By.xpath("//input[@id='listPageSearchLocality']"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		searchBar.sendKeys(locality);
 		
 		
@@ -44,6 +45,7 @@ public class TestSearch {
 		int maxLen = searchSuggestion.size() - 1;
 		int minLen = 0;
 		int randomLen = rand.nextInt((maxLen - minLen) + 1) + minLen;
+		wait.until(ExpectedConditions.visibilityOfAllElements(searchSuggestion.get(randomLen)));
 		searchSuggestion.get(randomLen).click();
 		
 		WebElement selectedLocality = driver.findElement(By.xpath("//span[@class='selected-locality-item']"));
