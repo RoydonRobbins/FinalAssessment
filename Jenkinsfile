@@ -6,7 +6,8 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-      	git 'https://github.com/RoydonRobbins/FinalAssessment.git'
+      	git branch : 'main', url : 'https://github.com/RoydonRobbins/FinalAssessment.git'
+      
       }
     }
     stage('Build') {
